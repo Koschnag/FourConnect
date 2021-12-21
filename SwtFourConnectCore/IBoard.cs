@@ -3,9 +3,7 @@
     public interface IBoard
     {
         void DropChip(int colNumber);
-
         bool CheckWin(IPlayer player);
-
         void Reset();
     }
 

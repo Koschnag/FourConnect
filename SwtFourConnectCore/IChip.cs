@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace SwtFourConnectCore
 {
     public interface IChip
     {
+        Color Color { get; set; }
+    }
+
+    public class Chip : IChip
+    {
+        public Chip(Color color)
+        {
+            Color = color;
+        }
+        public Color Color { get; set; }
     }
 }
