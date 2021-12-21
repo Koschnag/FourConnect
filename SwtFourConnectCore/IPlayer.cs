@@ -7,7 +7,7 @@ namespace SwtFourConnectCore
         string Name { get; set; }
         Color Color { get; set; }
         IList<IChip> Chips { get; }
-        void DropChip();
+        public void DropChip();
     }
 
     public class Player : IPlayer
